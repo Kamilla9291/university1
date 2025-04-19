@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>База данных учащихся</h1>
+        <div class="buttons">
+            <button id="facultiesBtn">Факультеты</button>
+            <button id="groupsBtn">Группы</button>
+            <button id="studentsBtn">Студенты</button>
+            <button id="schedulesBtn">Расписание</button>
+            <button id="allTablesBtn">Все данные</button>
+        </div>
+        <div id="output"></div>
+
+        <h2>Добавить группу</h2>
+    <form id="addGroupForm">
+        <input type="text" id="groupName" placeholder="Название группы" required>
+        <input type="text" id="facultyName" placeholder="Название факультета" required>
+        <button type="submit">Добавить группу</button>
+    </form>
+    <div id="groupResponse"></div>
+
+    <h2>Добавить студента</h2>
+    <form id="addStudentForm">
+        <input type="text" id="studentName" placeholder="Имя студента" required>
+        <input type="text" id="studentLastName" placeholder="Фамилия студента" required>
+        <input type="number" id="admissionYear" placeholder="Год поступления" required>
+        <input type="text" id="groupNameStudent" placeholder="Название группы" required>
+        <input type="text" id="phoneNumber" placeholder="Номер телефона" required>
+        <button type="submit">Добавить студента</button>
+    </form>
+    <div id="studentResponse"></div>
+    
+
+    <h2>Добавить расписание</h2>
+    <form id="addScheduleForm">
+        <input type="text" id="groupNameSchedule" placeholder="Название группы" required>
+        <input type="text" id="subject" placeholder="Название предмета" required>
+        <input type="text" id="dayOfWeek" placeholder="День недели" required>
+        <input type="text" id="time" placeholder="Время (чч:мм:сс)" required>
+        <input type="text" id="classroom" placeholder="Аудитория" required>
+        <button type="submit">Добавить расписание</button>
+    </form>
+    <div id="scheduleResponse"></div>
+    
+    <script src="scripts.js"></script>
+    </body>
+</html>

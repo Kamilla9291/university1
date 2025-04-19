@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #89c8f1dc;
+    padding: 20px;
+}
+h1, h2 {
+    text-align: center;
+    color: #201e1e;
+    margin-bottom: 20px;
+}
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #21758a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #54f8e2ab;
+}
+#output {
+    margin-top: 20px;
+    text-align: left;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 80%;
+    margin: auto;
+    font-size: 14px;
+    overflow-wrap: break-word;
+}
+
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 20px;
+}
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+form {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+form input[type="text"],
+form input[type="number"],
+form button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+div[id$="Response"] {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+div[id$="Response"] p {
+    margin: 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+div[id$="Response"] p:nth-child(1) {
+    color: white;
+    background-color: #28a745;
+}
+
+div[id$="Response"] p:nth-child(2) {
+    color: white;
+    background-color: #dc3545;
+}
+
+#groupsTableBody tr {
+    position: relative;
+}
+
+.deleteIcon {
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+}
+
+.deleteIcon:hover {
+    color: darkred; 
+}
